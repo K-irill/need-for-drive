@@ -1,14 +1,13 @@
-.wrapper {
+.page {
   display: flex;
-  // align-items: center;
   justify-content: space-between;
   height: 100%;
 
-  .main-content {
+  .page__main {
     width: 688px;
     margin: 32px auto;
 
-    .main-content__header {
+    .page__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -28,17 +27,18 @@
         span {
           font-weight: 400;
           font-size: 14px;
+          font-style: normal;
           color: #999999;
           margin-left: 8px;
         }
       }
     }
 
-    .namecontent {
+    .page__content {
       width: 560px;
       margin: 163px auto;
 
-      .title {
+      .content__title {
         h1 {
           font-size: 70px;
           font-weight: 700;
@@ -53,24 +53,37 @@
         margin: 0;
         margin-top: 34px;
         font-size: 26px;
+        font-style: normal;
+        font-weight: 300;
         color: #999999;
       }
 
       button {
+        cursor: pointer;
         margin-top: 60px;
         width: 250px;
         height: 48px;
         border: 0;
         font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
         text-align: center;
         color: #ffffff;
         background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
         background-blend-mode: darken;
         border-radius: 8px;
+
+        &:hover {
+          background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+        }
+
+        &:active {
+          background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+        }
       }
     }
 
-    .main-content__footer {
+    .page__footer {
       display: flex;
       align-content: center;
       justify-content: space-between;
@@ -85,6 +98,7 @@
       }
 
       .telephone {
+        text-decoration: none;
         cursor: pointer;
         font-weight: 400;
         font-size: 13px;
