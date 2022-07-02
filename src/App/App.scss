@@ -4,14 +4,14 @@
   height: 100%;
 
   .page__main {
-    width: 688px;
+    max-width: 688px;
     margin: 32px auto;
 
     .page__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 560px;
+      max-width: 560px;
       margin: 0 auto;
 
       .name-company {
@@ -35,7 +35,6 @@
     }
 
     .page__content {
-      width: 560px;
       margin: 163px auto;
 
       .content__title {
@@ -74,11 +73,11 @@
         border-radius: 8px;
 
         &:hover {
-          background: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+          background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
         }
 
         &:active {
-          background: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+          background: linear-gradient(90deg, #076432 2.61%, #013c27 112.6%);
         }
       }
     }
@@ -87,7 +86,6 @@
       display: flex;
       align-content: center;
       justify-content: space-between;
-      width: 560px;
       margin: 0 auto;
       margin-top: 228px;
 
