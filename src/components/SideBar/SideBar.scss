@@ -1,17 +1,106 @@
+@keyframes animat {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.side-bar_open {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(21, 27, 31, 0.81);
+  opacity: 0;
+  animation: animat 0.5s forwards;
+
+  .option-menu {
+    cursor: default;
+    z-index: 3;
+    width: 51%;
+    height: inherit;
+    background: #111518;
+
+    .option-menu__close-btn {
+      padding: 32px 16px;
+      svg {
+        cursor: pointer;
+
+        &:hover {
+          path {
+            stroke: #0ec261;
+          }
+        }
+        &:active {
+          path {
+            stroke: #0fa857;
+          }
+        }
+      }
+    }
+
+    .option-menu__content {
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 560px;
+      height: 198px;
+      margin: 0 auto;
+      margin-top: 211px;
+
+      span {
+        max-width: 300px;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        color: #ffffff;
+
+        &:hover {
+          color: #0ec261;
+        }
+        &:active {
+          color: #0fa857;
+        }
+      }
+    }
+
+    .option-menu__socials {
+      cursor: pointer;
+      max-width: 144px;
+      height: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 38px;
+      margin-left: 73px;
+
+      &:hover {
+        svg {
+          path {
+            fill: #0ec261;
+          }
+        }
+      }
+      &:active {
+        svg {
+          path {
+            fill: #0fa857;
+          }
+        }
+      }
+    }
+  }
+}
+
 .side-bar {
   max-width: 64px;
   background: #151b1f;
   padding: 32px 16px;
   box-sizing: border-box;
-
-  .side-bar_open {
-    background: rgba(21, 27, 31, 0.81);
-
-    .option-menu {
-      width: 50%;
-      background: #111518;
-    }
-  }
 
   .side-bar_close {
     height: 100%;
@@ -31,7 +120,7 @@
 
       &:active {
         path {
-          stroke: #038155;
+          stroke: #0fa857;
         }
       }
     }

@@ -10,6 +10,89 @@
   margin: 0 !important;
   max-width: 688px;
 
+  .swiper__information {
+    position: absolute;
+    max-width: 495px;
+    color: #ffffff;
+    left: 96px;
+    top: 237px;
+
+    .information__header {
+      margin: 0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    .information__content {
+      margin: 0;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      color: #eeeeee;
+      margin-bottom: 32px;
+    }
+
+    .information__button {
+      cursor: pointer;
+      width: 164px;
+      height: 48px;
+      border: 0;
+      background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      color: #eeeeee;
+
+      &:hover {
+        background: linear-gradient(90deg, #124239 0%, #0b6918 100%);
+      }
+
+      &:active {
+        background: linear-gradient(90deg, #103a33 0%, #095914 100%);
+      }
+
+      &--second {
+        background: linear-gradient(90deg, #132949 0%, #0c7b67 100%);
+
+        &:hover {
+          background: linear-gradient(90deg, #10213c 0%, #0a6b59 100%);
+        }
+
+        &:active {
+          background: linear-gradient(90deg, #0d1b32 0%, #085749 100%);
+        }
+      }
+
+      &--third {
+        background: linear-gradient(90deg, #493013 0%, #7b0c3b 100%);
+
+        &:hover {
+          background: linear-gradient(90deg, #3f2a11 0%, #650a30 100%);
+        }
+
+        &:active {
+          background: linear-gradient(90deg, #35230e 0%, #5a092b 100%);
+        }
+      }
+
+      &--four {
+        background: linear-gradient(90deg, #281349 0%, #720c7b 100%);
+
+        &:hover {
+          background: linear-gradient(90deg, #21103e 0%, #680b71 100%);
+        }
+
+        &:active {
+          background: linear-gradient(90deg, #1e0e38 0%, #620b6a 100%);
+        }
+      }
+    }
+  }
+
   .swiper-button-prev {
     top: 1%;
     left: 1px;
