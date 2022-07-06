@@ -19,7 +19,7 @@
   .option-menu {
     cursor: default;
     z-index: 3;
-    width: 51%;
+    width: 50%;
     height: inherit;
     background: #111518;
 
@@ -42,57 +42,99 @@
     }
 
     .option-menu__content {
-      user-select: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       max-width: 560px;
-      height: 198px;
       margin: 0 auto;
-      margin-top: 211px;
-
-      span {
-        max-width: 300px;
-        cursor: pointer;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        color: #ffffff;
-
-        &:hover {
-          color: #0ec261;
-        }
-        &:active {
-          color: #0fa857;
-        }
-      }
-    }
-
-    .option-menu__socials {
-      cursor: pointer;
-      max-width: 144px;
-      height: 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 38px;
-      margin-left: 73px;
-
-      &:hover {
-        svg {
-          path {
-            fill: #0ec261;
+      .content {
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+       
+        height: 198px;
+    
+        margin-top: 211px;
+  
+        span {
+          cursor: pointer;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 32px;
+          color: #ffffff;
+  
+          &:hover {
+            color: #0ec261;
+          }
+          &:active {
+            color: #0fa857;
           }
         }
       }
-      &:active {
-        svg {
-          path {
-            fill: #0fa857;
+
+      .option-menu__socials {
+        max-width: 144px;
+        height: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 38px;
+  
+        .socials_telegram {
+          cursor: pointer;
+          &:hover {
+            svg {
+              path {
+                fill: #0ec261;
+              }
+            }
+          }
+          &:active {
+            svg {
+              path {
+                fill: #0fa857;
+              }
+            }
+          }
+        }
+        .socials_facebook {
+          cursor: pointer;
+          &:hover {
+            svg {
+              path {
+                fill: #0ec261;
+              }
+            }
+          }
+          &:active {
+            svg {
+              path {
+                fill: #0fa857;
+              }
+            }
+          }
+        }
+        .socials_instagram {
+          cursor: pointer;
+          &:hover {
+            svg {
+              path {
+                fill: #0ec261;
+              }
+            }
+          }
+          &:active {
+            svg {
+              path {
+                fill: #0fa857;
+              }
+            }
           }
         }
       }
+     
     }
+
+   
   }
 }
 

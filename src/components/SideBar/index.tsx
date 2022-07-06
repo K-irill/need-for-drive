@@ -18,15 +18,23 @@ const SideBar = () => {
               <MenuBtnClose onClick={openMenu} />
             </div>
             <div className="option-menu__content">
-              <span>ПАРКОВКА</span>
-              <span>СТРАХОВКА</span>
-              <span>БЕНЗИН</span>
-              <span>ОБСЛУЖИВАНИЕ</span>
-            </div>
-            <div className="option-menu__socials">
-              <Telegram />
-              <Telegram />
-              <Telegram />
+              <div className="content">
+                <span>ПАРКОВКА</span>
+                <span>СТРАХОВКА</span>
+                <span>БЕНЗИН</span>
+                <span>ОБСЛУЖИВАНИЕ</span>
+              </div>
+              <div className="option-menu__socials">
+                <div className="socials_telegram">
+                  <Telegram />
+                </div>
+                <div className="socials_facebook">
+                  <Telegram />
+                </div>
+                <div className="socials_instagram">
+                  <Telegram />
+                </div>
+              </div>
             </div>
           </div>
         </div>
