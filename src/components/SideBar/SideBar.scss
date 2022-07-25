@@ -23,7 +23,7 @@
     height: inherit;
     background: #111518;
 
-    .option-menu__close-btn {
+    &__close-btn {
       padding: 32px 16px;
       svg {
         cursor: pointer;
@@ -41,7 +41,7 @@
       }
     }
 
-    .option-menu__content {
+    &__content {
       max-width: 560px;
       margin: 0 auto;
       .content {
@@ -50,18 +50,19 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-       
+
         height: 198px;
-    
+
         margin-top: 211px;
-  
-        span {
+
+        a {
+          text-decoration: none;
           cursor: pointer;
           font-style: normal;
           font-weight: 500;
           font-size: 32px;
           color: #ffffff;
-  
+
           &:hover {
             color: #0ec261;
           }
@@ -71,15 +72,15 @@
         }
       }
 
-      .option-menu__socials {
+      .socials {
         max-width: 144px;
         height: 32px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 38px;
-  
-        .socials_telegram {
+
+        &__telegram {
           cursor: pointer;
           &:hover {
             svg {
@@ -96,7 +97,7 @@
             }
           }
         }
-        .socials_facebook {
+        &__facebook {
           cursor: pointer;
           &:hover {
             svg {
@@ -113,7 +114,7 @@
             }
           }
         }
-        .socials_instagram {
+        &__instagram {
           cursor: pointer;
           &:hover {
             svg {
@@ -131,27 +132,24 @@
           }
         }
       }
-     
     }
-
-   
   }
 }
 
-.side-bar {
+.side-bar_close {
   max-width: 64px;
   background: #151b1f;
   padding: 32px 16px;
   box-sizing: border-box;
 
-  .side-bar_close {
+  .content {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    .side-bar__menu-btn {
+    &__menu-btn {
       height: 32px;
       cursor: pointer;
       &:hover {
@@ -167,7 +165,7 @@
       }
     }
 
-    .side-bar__switch-lang {
+    &__switch-lang {
       cursor: pointer;
       display: flex;
       align-items: center;

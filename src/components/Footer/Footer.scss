@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 13px;
+    color: #999999;
+  }
+
+  &__telephone {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13px;
+    color: #121212;
+
+    &:hover {
+      color: #0ec261;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  &__name-company {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #0ec261;
+  }
+
+  &__city {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      font-style: normal;
+      color: #999999;
+      margin-left: 8px;
+    }
+  }
+}

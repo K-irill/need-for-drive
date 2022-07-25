@@ -1,0 +1,36 @@
+.page-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 900px;
+  height: 100vh;
+  margin: 32px auto;
+
+  &__main {
+    margin: 30px auto;
+    max-width: 600px;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+    color: #0ec261;
+  }
+
+  &__content {
+    font-size: 27px;
+    text-align: center;
+
+    a {
+      color: #0ec261;
+
+      &:hover {
+        color: #0eb45b;
+      }
+      &:active {
+        color: #0d984e;
+      }
+    }
+  }
+}

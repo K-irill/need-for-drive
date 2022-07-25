@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -17,13 +18,15 @@ const Slider = () => {
       pagination={{ clickable: true }}
     >
       <SwiperSlide>
-        <div className="swiper__information">
+        <div className="information swiper__information ">
           <h2 className="information__header">Бесплатная парковка</h2>
           <p className="information__content">
             Оставляйте машину на платных городских парковках и разрешенных
             местах, не нарушая ПДД, а также в аэропортах.
           </p>
-          <button className="information__button">Подробнее</button>
+          <Link to={"./parking"} className="information__button">
+            Подробнее
+          </Link>
         </div>
         <img src={require("../../images/first-slide.jpg")} alt="first-slide" />
       </SwiperSlide>
@@ -33,9 +36,12 @@ const Slider = () => {
           <p className="information__content">
             Полная страховка страховка автомобиля
           </p>
-          <button className="information__button information__button--second">
+          <Link
+            to={"./insurance"}
+            className="information__button information__button_second"
+          >
             Подробнее
-          </button>
+          </Link>
         </div>
         <img
           src={require("../../images/second-slide.jpg")}
@@ -48,9 +54,12 @@ const Slider = () => {
           <p className="information__content">
             Полный бак на любой заправке города за наш счёт
           </p>
-          <button className="information__button information__button--third">
+          <Link
+            to={"./petrol"}
+            className="information__button information__button_third"
+          >
             Подробнее
-          </button>
+          </Link>
         </div>
         <img src={require("../../images/third-slide.jpg")} alt="third-slide" />
       </SwiperSlide>
@@ -60,9 +69,12 @@ const Slider = () => {
           <p className="information__content">
             Автомобиль проходит еженедельное ТО
           </p>
-          <button className="information__button information__button--four">
+          <Link
+            to={"./service"}
+            className="information__button information__button_four"
+          >
             Подробнее
-          </button>
+          </Link>
         </div>
         <img src={require("../../images/four-slide.jpg")} alt="four-slide" />
       </SwiperSlide>

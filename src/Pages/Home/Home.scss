@@ -3,36 +3,14 @@
   justify-content: space-between;
   height: 100%;
 
-  .page__main {
-    box-sizing: border-box;
-    width: 100%;
+  &__main {
+    box-sizing: content-box;
+    padding: 0 20px;
     margin: 32px auto;
 
-    .page__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 0px auto;
-
-      .name-company {
-        font-weight: 700;
-        font-size: 30px;
-        color: #0ec261;
-      }
-
-      .city {
-        display: flex;
-        align-items: center;
-
-        span {
-          font-weight: 400;
-          font-size: 14px;
-          font-style: normal;
-          color: #999999;
-          margin-left: 8px;
-        }
-      }
-    }
+    // .page__header {
+    //   margin: 0px auto;
+    // }
 
     .page__content {
       margin: 163px auto;
@@ -54,18 +32,21 @@
         font-size: 26px;
         font-style: normal;
         font-weight: 300;
+        line-height: 30px;
         color: #999999;
       }
 
-      button {
+      .btn-booking {
         cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
         margin-top: 60px;
         width: 250px;
         height: 48px;
-        border: 0;
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
+        line-height: 48px;
         text-align: center;
         color: #ffffff;
         background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
@@ -83,29 +64,8 @@
     }
 
     .page__footer {
-      display: flex;
-      align-content: center;
-      justify-content: space-between;
       margin: 0 auto;
       margin-top: 228px;
-
-      .copyright {
-        font-weight: 400;
-        font-size: 13px;
-        color: #999999;
-      }
-
-      .telephone {
-        text-decoration: none;
-        cursor: pointer;
-        font-weight: 400;
-        font-size: 13px;
-        color: #121212;
-
-        &:hover {
-          color: #0ec261;
-        }
-      }
     }
   }
 }

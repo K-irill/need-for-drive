@@ -3,6 +3,7 @@ import { ReactComponent as MenuBtn } from "../../images/menu_btn.svg";
 import { ReactComponent as MenuBtnClose } from "../../images/menu_btn-close.svg";
 import { ReactComponent as Telegram } from "../../images/Telegram_white.svg";
 import "./SideBar.scss";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -19,32 +20,32 @@ const SideBar = () => {
             </div>
             <div className="option-menu__content">
               <div className="content">
-                <span>ПАРКОВКА</span>
-                <span>СТРАХОВКА</span>
-                <span>БЕНЗИН</span>
-                <span>ОБСЛУЖИВАНИЕ</span>
+                <Link to={"/parking"}>ПАРКОВКА</Link>
+                <Link to={"/insurance"}>СТРАХОВКА</Link>
+                <Link to={"/petrol"}>БЕНЗИН</Link>
+                <Link to={"/service"}>ОБСЛУЖИВАНИЕ</Link>
               </div>
-              <div className="option-menu__socials">
-                <div className="socials_telegram">
+              <div className="socials">
+                <Link className="socials__telegram" to={"/error"}>
                   <Telegram />
-                </div>
-                <div className="socials_facebook">
+                </Link>
+                <Link className="socials__facebook" to={"/error"}>
                   <Telegram />
-                </div>
-                <div className="socials_instagram">
+                </Link>
+                <Link className="socials__instagram" to={"/error"}>
                   <Telegram />
-                </div>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       ) : (
-        <div className="side-bar">
-          <div className="side-bar_close">
-            <div className="side-bar__menu-btn">
+        <div className="side-bar_close">
+          <div className="content">
+            <div className="content__menu-btn">
               <MenuBtn onClick={openMenu} />
             </div>
-            <div className="side-bar__switch-lang">
+            <div className="content__switch-lang">
               <span>Eng</span>
             </div>
           </div>

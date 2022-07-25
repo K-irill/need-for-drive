@@ -10,14 +10,16 @@
   margin: 0 !important;
   max-width: 688px;
 
-  .swiper__information {
+  &__information {
     position: absolute;
     max-width: 495px;
     color: #ffffff;
     left: 96px;
     top: 237px;
+  }
 
-    .information__header {
+  .information {
+    &__header {
       margin: 0;
       font-style: normal;
       font-weight: 500;
@@ -25,7 +27,7 @@
       margin-bottom: 8px;
     }
 
-    .information__content {
+    &__content {
       margin: 0;
       font-style: normal;
       font-weight: 300;
@@ -34,18 +36,20 @@
       margin-bottom: 32px;
     }
 
-    .information__button {
+    &__button {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
       cursor: pointer;
       width: 164px;
       height: 48px;
-      border: 0;
       background: linear-gradient(90deg, #13493f 0%, #0c7b1b 100%);
       border-radius: 4px;
       font-weight: 500;
       font-size: 18px;
-      line-height: 21px;
-      text-align: center;
+      line-height: 48px;
       color: #eeeeee;
+      text-decoration: none;
 
       &:hover {
         background: linear-gradient(90deg, #124239 0%, #0b6918 100%);
@@ -55,7 +59,7 @@
         background: linear-gradient(90deg, #103a33 0%, #095914 100%);
       }
 
-      &--second {
+      &_second {
         background: linear-gradient(90deg, #132949 0%, #0c7b67 100%);
 
         &:hover {
@@ -67,7 +71,7 @@
         }
       }
 
-      &--third {
+      &_third {
         background: linear-gradient(90deg, #493013 0%, #7b0c3b 100%);
 
         &:hover {
@@ -79,7 +83,7 @@
         }
       }
 
-      &--four {
+      &_four {
         background: linear-gradient(90deg, #281349 0%, #720c7b 100%);
 
         &:hover {

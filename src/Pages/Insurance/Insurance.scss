@@ -1,0 +1,51 @@
+.insurance {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 900px;
+  height: 100vh;
+  margin: 32px auto;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 600px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #0ec261;
+  }
+
+  &__content {
+    font-size: 20px;
+  }
+
+  .btn-booking {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    width: 250px;
+    height: 48px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #0ec261 2.61%, #039f67 112.6%);
+    background-blend-mode: darken;
+    border-radius: 8px;
+
+    &:hover {
+      background: linear-gradient(90deg, #0b934a 2.61%, #026e47 112.6%);
+    }
+
+    &:active {
+      background: linear-gradient(90deg, #076432 2.61%, #013c27 112.6%);
+    }
+  }
+}
