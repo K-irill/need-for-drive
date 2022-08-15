@@ -1,0 +1,14 @@
+.order {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    &__content {
+        .content-header {
+            width: 1248px;
+        }
+
+        margin: 32px auto;
+        padding: 0 70px;
+    }
+}
