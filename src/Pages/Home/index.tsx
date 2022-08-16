@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="page">
-      <SideBar />
+      <div className="page__side-bar">
+        <SideBar />
+      </div>
       <div className="page__main">
         <header className="page__header">
           <Header />
