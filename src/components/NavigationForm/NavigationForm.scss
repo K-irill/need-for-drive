@@ -2,11 +2,12 @@
   &__navigation {
     position: relative;
     padding: 0 65px;
+    padding: 0 65px;
 
     .form-step {
       width: 1248px;
       margin: 40px auto 0 auto;
-      padding: 0 70px;
+      
 
       &__item {
         display: inline-block;
@@ -45,19 +46,86 @@
   }
 
   &__content {
+    min-height: 100%;
     display: flex;
-    margin-top: 40px;
+    justify-content: space-between;
+    width: 1248px;
+    margin: 40px auto 0 auto;
+    padding: 0 65px;
 
     .form-content {
+      
+    }
+
+    .information-order {
       position: relative;
+      display: flex;
+      flex-direction: column;
 
       &::after {
-        transform: rotate(90deg);
-        content: "";
+        content: '';
+        width: 0;
+        height: 100%;
         position: absolute;
-        width: 100%;
-        height: 1px;
-        background-color: #eeeeee;
+        border: 1px solid #EEEEEE;
+        top: -33px;
+        left: -33px;
+        }
+      
+
+      &__header {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #121212;
+        text-align: right;
+        margin: 0;
+        margin-bottom: 26px;
+      }
+
+      .location {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        color: #999999;
+        margin-bottom: 32px;
+
+        &__title {
+          color: #121212;
+          margin-right: 12px;
+        }
+
+        &__destination {
+          width: 101px;
+          margin-left: 11px;
+        }
+      }
+
+      .order-price {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #121212;
+        margin-bottom: 32px;
+
+        span {
+          font-weight: 500;
+        }
+      }
+
+      &__btn {
+        cursor: default;
+        height: 48px;
+        font-style: normal;
+font-weight: 500;
+font-size: 18px;
+        color: #FFFFFF;
+        background: #EEEEEE;
+        border: 0;
+        border-radius: 8px;
       }
     }
   }

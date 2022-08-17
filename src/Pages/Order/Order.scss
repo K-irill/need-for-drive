@@ -1,7 +1,7 @@
 .order {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  
 
   &__side-bar {
     height: 100vh;
@@ -9,13 +9,14 @@
 
   &__content {
     width: 100%;
+    margin: 0 auto;
 
     .content-header {
       width: 1248px;
       margin: 0 auto;
-      padding: 0 70px;
+      padding: 32px 65px 0 65px;
     }
 
-    margin: 32px auto;
+    
   }
 }
